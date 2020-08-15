@@ -1,0 +1,9 @@
+version: "3"
+services:
+  artemis:
+    image: vromero/activemq-artemis:2.14.0
+    ports:
+      - "8161:8161"
+      - "61616:61616"
+    environment:
+      DISABLE_SECURITY: "true"
