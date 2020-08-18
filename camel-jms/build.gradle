@@ -14,8 +14,15 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-artemis'
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	runtimeOnly 'mysql:mysql-connector-java'
+
 	implementation 'org.apache.camel.springboot:camel-spring-boot-starter:3.4.2'
 	implementation 'org.apache.camel.springboot:camel-jms-starter:3.4.2'
+	implementation 'org.apache.camel.springboot:camel-sql-starter:3.4.2'
+
+
+
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
